@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function foco(){
+            document.getElementById("idNome").focus()
+        }
+    </script>
+</head>
+<body onload="foco()">
+    <h1>Cadastro de Pessoas</h1>
+    <form action="/salvar" method="post">
+        Nome:<input type="text" name="txtNome" id="idNome"  required/> <br/>
+        Idade:<input type="text" name="txtIdade" placeholder="Digite sua idade aqui"/> <br/>
+        Peso:<input type="text" name="txtPeso" /> <br/>
+        <input type="submit" name="b1" value="Gravar" />
+    </form>
+</body>
+</html>

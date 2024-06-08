@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body bgcolor="lightblue">
+    <p align="center">
+        <font size="24">Pessoas Cadastradas</font>
+    </p>
+    <table border='1' align='center' style="font-size: xx-large;">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Peso</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (i=0; i < clientes.length; i++) { %>
+                <tr>
+                    <td>
+                        <%=clientes[i].nome %>
+                    </td>
+                    <td align="center">
+                        <%=clientes[i].idade %>
+                    </td>
+                    <td>
+                        <%=clientes[i].peso %>
+                    </td align="center">
+                    <td>
+                        <a href='/remover/<%=i%>'><input type='button' value='Remover' /> </a>
+                    </td align="center">
+                    
+
+                    <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>

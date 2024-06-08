@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container_pizza {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; 
+    padding: 20px;
+}
+
+.pizza {
+    position: relative; /* Define o contêiner da pizza como relativo */
+    max-width: 360px;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+    }
+    
+    .botao_pizza {
+    cursor: pointer;
+    position: absolute; /* Define o botão como absoluto em relação à pizza */
+    bottom: 20px;       /* Distância do botão em relação ao fundo da pizza */
+    left: 50%;          /* Move o botão para o meio horizontalmente */
+    transform: translateX(-50%); /* Centraliza exatamente no meio horizontal */
+    background-color: rgb(0, 165, 0);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    width: 80%;
+    height: 50px;
+    font-weight: bold;
+    z-index: 1; /* Certifica-se de que o botão está acima do conteúdo da pizza */
+}
+
+.valor_pizza {
+    margin-bottom: 60px; /* Margem inferior aumentada para evitar sobreposição com o botão */
+}
+    
+    .botao_pizza:hover {
+        background-color: rgb(0, 111, 0);
+        }
+        
+        
+        /*
+        .botao_pizza {
+        
+            
+            background-color: rgb(0, 165, 0);
+            margin: 20px;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            width: 80%;
+            height: 50px;
+            font-weight: bold;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+}
+
+.container_pizza {
+    
+    color: black;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 25px; 
+    padding: 20px;
+    }
+    
+
+    .pizza {    
+        
+    max-width: 360px;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+
+
+
+.botao_pizza:hover {
+    background-color: rgb(0, 111, 0);
+}
+
+*/
