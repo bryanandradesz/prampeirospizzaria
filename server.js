@@ -17,6 +17,7 @@ app.set('views', path.join(__dirname+"/public/scripts/"));
 
 // ------------------ Variaveis Globais --------------------- //
 
+let login = true
 const vetor = new Array()
 
 
@@ -32,7 +33,6 @@ app.get("/menu", function (req, res) {
 
 app.get("/header", function (req, res) {
     
-    const login = true
     if(login) {
         
         res.render("header", {login_section:"Minha ", login_section2:"Conta", num_itemscart:0})
@@ -47,8 +47,12 @@ app.get('/body', function (req, res) {
 })
 // -----------------Rotas Navegação---------------------- //
 
-app.get('/login', function (req, res) {
-    res.sendFile(__dirname+'/public/scripts/login.html')
+app.get('/account', function (req, res) {
+    if (login) {
+         res.render("account")
+    } else {
+        res.render("login")
+    }
 })
 app.get('/cardapio', function (req, res) {
     res.render("cardapio")
