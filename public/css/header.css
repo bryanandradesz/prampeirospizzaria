@@ -70,9 +70,7 @@ a:link {
 }
 
 /* link que foi visitado */
-a:visited {
-    color: green;
-}
+
 
 /* mouse over */
 a:hover {
@@ -82,7 +80,3 @@ a:hover {
      border-style: groove;
  }
  
- /* link selecionado */
- a:active {
-     color: blue;
- }

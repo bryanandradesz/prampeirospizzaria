@@ -10,38 +10,91 @@
 
 </head>
 <body>
-   <form action="/addcarrinho" method="post">
     <div class="container_pizza">
-        <div class="pizza">
-            <img src="img/pizza_calabresa.png" class="img_pizza" width="40%">
-            <h2 class="nome_pizza" name="inSabor">Pizza de Calabresa</h2>
-            <p class="desc_pizza" name="inIngredientes">Calabresa, Cebola, Mussarela e Oregano <br> Tamanho: <strong>Grande</strong></p> <br>
-            <h3 class="valor_pizza" name="inValor">Valor: R$20,00</h3>
-            <button type="submit" name="b1" class="botao_pizza" value="pizza_calabresa">Adicionar ao Carrinho</button>
-        </div>
-        <div class="pizza">
-            <img src="img/pizza_portuguesa.png" class="img_pizza" width="40%">
-            <h2 class="nome_pizza" name="inSabor">Pizza de Portuguesa</h2>
-            <p class="desc_pizza" name="inIngredientes">Cebola, Mussarela, Oregano, Ovos, Pimentão e Presunto <br> Tamanho: <strong>Grande</strong></p> <br>
-            <h3 class="valor_pizza" name="inValor">Valor: R$20,00</h3>
-            <button type="submit" name="b2" class="botao_pizza" value="pizza_portuguesa">Adicionar ao Carrinho</button>
-        </div>
+
+        <!-- Pizza Calabresa -->
+        <form action="/addcarrinho" method="post">
+            <div class="pizza">
+                <img src="img/pizza_calabresa.png" class="img_pizza" width="40%">
+
+                <h2 class="nome_pizza">Pizza de Calabresa</h2>
+                <input type="hidden" name="inSabor" value="Pizza de Calabresa">
+
+                <input type="hidden" name="inIngredientes" class="desc_pizza" value="Calabresa, Cebola, Mussarela e Oregano">
+                <p class="desc_pizza">Calabresa, Cebola, Mussarela e Oregano <br> Tamanho: <strong>Grande</strong></p> <br>
+
+                <h2 class="valor_pizza">R$20,00</h2>
+                <input type="hidden" name="inValor" value="20.00">
+
+                <button type="submit" class="botao_pizza" onclick="mostrarMensagem(this)">Adicionar ao Carrinho</button>
+                <span class="mensagem" style="display:none;">Pedido adicionado ao carrinho!</span>
+            </div>
+        </form>
+        <!-- Fim Pizza Calabresa -->
+
+        <!-- Pizza Portuguesa -->
+        <form action="/addcarrinho" method="post">
+            <div class="pizza">
+                <img src="img/pizza_portuguesa.png" class="img_pizza" width="40%">
+
+                <h2 class="nome_pizza">Pizza de Portuguesa</h2>
+                <input type="hidden" name="inSabor" value="Pizza de Portuguesa">
+
+                <input type="hidden" name="inIngredientes" class="desc_pizza" value="Cebola, Mussarela, Oregano, Ovos, Pimentão e Presunto">
+                <p class="desc_pizza">Cebola, Mussarela, Oregano, Ovos, Pimentão e Presunto <br> Tamanho: <strong>Grande</strong></p> <br>
+
+                <h2 class="valor_pizza">R$20,00</h2>
+                <input type="hidden" name="inValor" value="20.00">
+
+                <button type="submit" class="botao_pizza">Adicionar ao Carrinho</button>
+            </div>
+        </form>
+        <!-- Fim Pizza Portuguesa -->
+
+       <!-- Pizza Brigadeiro -->
+       <form action="/addcarrinho" method="post">
         <div class="pizza">
             <img src="img/pizza_brigadeiro.png" class="img_pizza" width="40%">
+
             <h2 class="nome_pizza">Pizza de Brigadeiro</h2>
+            <input type="hidden" name="inSabor" value="Pizza de Brigadeiro">
+
+            <input type="hidden" name="inIngredientes" class="desc_pizza" value="Chocolate Nestlé Moça e Confetes de Chocolate">
             <p class="desc_pizza">Chocolate Nestlé Moça e Confetes de Chocolate <br> Tamanho: <strong>Grande</strong></p> <br>
-            <h3 class="valor_pizza">Valor: R$20,00</h3>
-            <button type="submit" name="b3" class="botao_pizza" value="pizza_brigadeiro">Adicionar ao Carrinho</button>
+
+            <h2 class="valor_pizza">R$20,00</h2>
+            <input type="hidden" name="inValor" value="20.00">
+
+            <button type="submit" class="botao_pizza">Adicionar ao Carrinho</button>
         </div>
+    </form>
+    <!-- Fim Pizza Brigadeiro -->
+
+    <!-- Pizza Charge -->
+    <form action="/addcarrinho" method="post">
         <div class="pizza">
             <img src="img/pizza_charge.png" class="img_pizza" width="40%">
+
             <h2 class="nome_pizza">Pizza de Charge</h2>
+            <input type="hidden" name="inSabor" value="Pizza de Charge">
+
+            <input type="hidden" name="inIngredientes" class="desc_pizza" value="Chocolate Nestlé Moça, Doce de Leite e Amendoim Triturado">
             <p class="desc_pizza">Chocolate Nestlé Moça, Doce de Leite e Amendoim Triturado <br> Tamanho: <strong>Grande</strong></p> <br>
-            <h3 class="valor_pizza">Valor: R$20,00</h3>
-            <button type="submit" name="b4" class="botao_pizza" value="pizza_charge">Adicionar ao Carrinho</button>
+
+            <h2 class="valor_pizza">R$20,00</h2>
+            <input type="hidden" name="inValor" value="20.00">
+
+            <button type="submit" class="botao_pizza" >Adicionar ao Carrinho</button>
         </div>
+    </form>
+    <!-- Fim Pizza Charge -->
+
+
+
     </div>
-</form>
+
 
 </body>
+
+
 </html>

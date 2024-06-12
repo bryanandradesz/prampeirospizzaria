@@ -5,42 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/viewcart.css">
+    <link rel="stylesheet" href="css/global.css">
     <title>Carrinho</title>
 </head>
 
-<body bgcolor="lightblue">
-    <p align="center">
-        <font size="24">Carrinho</font>
-    </p>
-    <table border='1' align='center' style="font-size: xx-large;">
-        <thead>
-            <tr>
-                <th>Sabor</th>
-                <th>Ingredientes</th>
-                <th>Valor</th>
-                <th>Ação</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% for (i=0; i < carrinho.length; i++) { %>
-                <tr>
-                    <td>
-                        <%=carrinho[i].sabor %>
-                    </td>
-                    <td align="center">
-                        <%=carrinho[i].ingredientes %>
-                    </td>
-                    <td>
-                        <%=clientes[i].valor %>
-                    </td align="center">
-                    <td>
-                        <a href='/remover/<%=i%>'><input type='button' value='Remover' /> </a>
-                    </td align="center">
-                    
+<body>
 
-                    <% } %>
-        </tbody>
-    </table>
+    <h1> Carrinho </h1>
+    <h2>Sabor          Ingredientes            Valor</h2>
+    <div class="container_item">
+        <% for (i=0; i < carrinho.length; i++) { %>
+
+<div class="item">
+   <strong>Sabor: </strong> <%=carrinho[i].sabor %> <strong>Ingredientes:</strong> <%=carrinho[i].ingredientes %> <br> <strong>Tamanho:</strong> Grande
+
+   <strong>Valor R$</strong> <%=carrinho[i].valor %>
+
+
+
+<button type="submit" class="botao_item"><a href='/remover/<%=i%>'>Remover</a></button>
+</div>
+                
+                <% } %>
+    </div>
+
 </body>
 
 </html>
