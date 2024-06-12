@@ -18,18 +18,20 @@
         <% for (i=0; i < carrinho.length; i++) { %>
 
 <div class="item">
-   <strong>Sabor: </strong> <%=carrinho[i].sabor %> <strong>Ingredientes:</strong> <%=carrinho[i].ingredientes %> <br> <strong>Tamanho:</strong> Grande
+   <font size="3" ><strong>Pedido #<%=i+1%></strong></font> <img src="<%= carrinho[i].img %>"><br>  <strong>Sabor: </strong> <%=carrinho[i].sabor %>  <br> <strong>Tamanho:</strong> Grande <br> <strong>Ingredientes:</strong> <%=carrinho[i].ingredientes %> 
 
-   <strong>Valor R$</strong> <%=carrinho[i].valor %>
+   <br> <strong>Valor: </strong>R$<%=(carrinho[i].valor).toFixed(2) %>
 
 
 
-<button type="submit" class="botao_item"><a href='/remover/<%=i%>'>Remover</a></button>
+<button type="submit" class="botao_item"><a href='/remover/<%=i%>'> <img src="img/trash-can.png" ></a></button>
 </div>
                 
                 <% } %>
     </div>
 
 </body>
-
+<aside>
+    <h1>Teste</h1>
+</aside>
 </html>

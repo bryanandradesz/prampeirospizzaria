@@ -80,8 +80,9 @@ app.post('/addcarrinho', function (req, res) {
         obj.sabor = String(req.body.inSabor);
         obj.ingredientes = String(req.body.inIngredientes);
         obj.valor = parseFloat(req.body.inValor);
+        obj.img = String(req.body.inImg)
         itemsCarrinho += 1
-        console.log(`--------< Novo Pedido! >--------\nPizza: ${obj.sabor}\nIngredientes: ${obj.ingredientes}\nValor: ${obj.valor}`)
+        console.log(`--------< Novo Pedido! >--------\nPizza: ${obj.sabor}\nIngredientes: ${obj.ingredientes}\nValor: ${obj.valor}\nFoto: ${obj.img}`)
         res.redirect("/mostrarCarrinho")
         vetor.push(obj)
     }

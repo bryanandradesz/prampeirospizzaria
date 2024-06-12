@@ -2,6 +2,7 @@ module.exports = class Carrinho {
   #ingredientes;
   #sabor;
   #valor;
+  #img;
 
   //é o primeiro método a ser executado quando um objeto é instanciado da classe
   constructor() {
@@ -28,6 +29,12 @@ module.exports = class Carrinho {
   }
   get valor() {
     return this.#valor;
+  }
+  set img(i) {
+    this.#img = i;
+  }
+  get img() {
+    return this.#img;
   }
   //função que retorna o dobro da idade
   dobroValor() {

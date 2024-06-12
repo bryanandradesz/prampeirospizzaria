@@ -12,6 +12,10 @@
     padding: 20px;
 }
 
+.img_pizza {
+    padding: 20px 10px;
+}
+
 .pizza {
     position: relative; /* Define o contêiner da pizza como relativo */
     max-width: 360px;
