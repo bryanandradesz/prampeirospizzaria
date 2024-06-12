@@ -1,47 +1,80 @@
-* {
-  background-color: white;
-}
-
-.container_item {
-  display: inline-block;
-  margin: 20px;
-  width: 70%;
-  gap: 20px;
-}
-
-.item {
-  font-size: 15px;
-  margin: 10px 20px;
-  padding: 15px 15px 20px;
-  position: relative;
-  /* Define o contêiner da pizza como relativo */
-
-  border: 1px solid #303030;
-  border-radius: 20px;
-
-  background-color: #f9f9f9;
-}
-
-.botao_item, .botao_item a {
-  float: right;
-  border-color: rgb(154, 0, 0);
-
-  border-radius: 10px;
-  padding: 3px;
-
-  background-color: red;
-}
-
-.botao_item a img {
+body {
+    background-color: rgb(234, 234, 234);
+  }
+  
+  .container_item {
+    display: inline-block;
+    margin: 20px;
+    width: 70%;
+    gap: 20px;
+  }
+  
+  .item {
+    font-size: 15px;
+    margin: 10px 20px;
+    padding: 15px 15px 20px;
+    position: relative;
+    /* Define o contêiner da pizza como relativo */
+  
+    border: 1px solid #303030;
+    border-radius: 20px;
+  
+    background-color: #f9f9f9;
+  }
+  
+  .botao_item,
+  .botao_item a {
+    float: right;
+    border-color: rgb(154, 0, 0);
+  
+    border-radius: 10px;
+    padding: 3px;
+  
     background-color: red;
-}
-
-
-
-.item img {
-    
+  }
+  
+  .botao_item a img {
+    background-color: red;
+  }
+  
+  .item img {
     width: 20px;
     height: 16px;
     margin: 0;
-}
+  }
+  aside {
+    float: right;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    margin-right: 30px;
+    margin-bottom: 70px; /* Adicionando margem inferior para garantir espaço para o botão */
+  }
+  
+  .content {
+    margin: 30px;
+  }
+  
+  .botao_finalizar {
+    width: 100%;
+    margin: 10px auto 10px; /* Centralizando o botão horizontalmente */
+    cursor: pointer;
+    background-color: rgb(0, 165, 0);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bold;
+    height: 50px;
+  }
 
+  .botao_finalizar a {
+    color: white;
+  }
+
+  .botao_finalizar:hover {
+    background-color: rgb(0, 138, 0);
+  }
+  
+  h2 {
+    margin: 10px 40px 0px;
+  }

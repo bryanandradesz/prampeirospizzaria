@@ -37,7 +37,8 @@ module.exports = class Carrinho {
     return this.#img;
   }
   //função que retorna o dobro da idade
-  dobroValor() {
-    return 2 * this.#valor;
+  total(v) {
+    var total = 0
+    console.log( total += this.#valor)
   }
 };

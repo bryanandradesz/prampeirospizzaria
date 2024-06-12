@@ -94,6 +94,22 @@ app.post('/addcarrinho', function (req, res) {
 
 // -----------------------------------------------------------
 
+// ----------------- Finalizar Compra ---------------------- //
+app.get('/finalizarcompra', function (req, res) {
+
+    try {
+            
+            res.render("succeful")
+        
+    }
+    catch (erro) {
+        console.log("Erro: " + erro) // vai para o terminal
+        res.send("Erro: " + erro) // vai para o browser
+    }
+})
+
+// -----------------------------------------------------------
+
 
 
 
