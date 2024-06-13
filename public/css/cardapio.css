@@ -18,6 +18,12 @@ body {
     padding: 20px 10px;
 }
 
+
+#qtd_pizzas_input    {
+    text-align: center;
+    width: 30px;
+}
+
 .pizza {
     position: relative; /* Define o contêiner da pizza como relativo */
     max-width: 360px;

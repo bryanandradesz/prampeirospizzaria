@@ -2,14 +2,21 @@ module.exports = class Carrinho {
   #ingredientes;
   #sabor;
   #valor;
+  #quantidade;
   #img;
+  #totalqtd;
+ 
 
   //é o primeiro método a ser executado quando um objeto é instanciado da classe
   constructor() {
     this.#ingredientes = "";
     this.#sabor = "";
+    this.#img = "";
     this.#valor = 0;
+    this.#quantidade = 0;
+    this.#totalqtd = 0.00;
   }
+  
 
   set ingredientes(i) {
     this.#ingredientes = i;
@@ -36,9 +43,19 @@ module.exports = class Carrinho {
   get img() {
     return this.#img;
   }
-  //função que retorna o dobro da idade
-  total(v) {
-    var total = 0
-    console.log( total += this.#valor)
+  set quantidade(q) {
+    this.#quantidade = q;
   }
+  get quantidade() {
+    return this.#quantidade;
+  }
+  set totalqtd(t) {
+    this.#totalqtd = t;
+  }
+  get totalqtd() {
+    return this.#totalqtd;
+  }
+
+  //função que retorna o dobro da idade
+  
 };

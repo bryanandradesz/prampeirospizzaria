@@ -80,10 +80,12 @@ app.post('/addcarrinho', function (req, res) {
         obj.sabor = String(req.body.inSabor);
         obj.ingredientes = String(req.body.inIngredientes);
         obj.valor = parseFloat(req.body.inValor);
+        obj.quantidade = parseInt(req.body.inQtd);
         obj.img = String(req.body.inImg)
+        obj.totalqtd = parseFloat(parseInt(req.body.inQtd) * parseFloat(req.body.inValor))
         itemsCarrinho += 1
         console.log(`--------< Novo Pedido! >--------\nPizza: ${obj.sabor}\nIngredientes: ${obj.ingredientes}\nValor: ${obj.valor}\nFoto: ${obj.img}`)
-        res.redirect("/mostrarCarrinho")
+        res.redirect("/listar")
         vetor.push(obj)
     }
     catch (erro) {
@@ -98,7 +100,10 @@ app.post('/addcarrinho', function (req, res) {
 app.get('/finalizarcompra', function (req, res) {
 
     try {
-            
+            for (let u = 0; u < vetor.length; u++) {
+                vetor.splice(u, vetor.length) 
+            }
+            itemsCarrinho = 0
             res.render("succeful")
         
     }

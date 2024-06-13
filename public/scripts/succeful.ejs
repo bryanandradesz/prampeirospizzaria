@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
     <title>Document</title>
 </head>
 <style>
-    * {
-        color: white;
+    body h1 {
+        margin: 10px;
     }
+    body {
+        color: rgb(0, 0, 0);
+        background-color: rgb(237, 237, 237);
+        transform: translateX(25%);
+
+       
+    }
+
+ 
 </style>
 <body>
-    Pedido realizado com sucesso!
+    <h1>Seu pedido foi realizado com sucesso!</h1>
+    <iframe id="iframe_img" src="https://lottie.host/embed/34e532a9-1f2d-4a3d-8492-ebc10af6a575/8XU6XlVMKl.json" frameborder="0" width="50%" height="500"></iframe>
 </body>
-<script>
+ <script>
    setTimeout(function() {
       window.location.href = "/body"; // Redireciona para a página inicial
     }, 3000);
