@@ -28,7 +28,7 @@ const vetor = new Array()
 // ------------------Principais--------------------- //
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/index.html')
+   res.sendFile(__dirname + '/index.html')
 })
 
 app.get("/menu", function (req, res) {
@@ -42,8 +42,8 @@ app.get("/header", function (req, res) {
     if (login) {
 
         res.render("header", { 
-             login_section: "Minha ",
-             login_section2: "Conta", 
+             login_section: "Olá, ",
+             login_section2: "Prof_Prampeiro.", 
              numCarrinho: itemsCarrinho 
             })
     } else {
@@ -63,11 +63,25 @@ app.get('/body', function (req, res) {
 
 app.get('/account', function (req, res) {
     if (login) {
-        res.render("account")
+       res.redirect("/")
     } else {
         res.render("login")
     }
 })
+
+app.post('/login', function (req, res) {
+    const usuario = String(req.body.inUsuario)
+    const senha = String(req.body.inSenha)
+    if (usuario == "Prof_Prampeiro" && senha == "prampreiroif123") {
+        login = true
+        res.redirect("/")
+        } else {
+        res.redirect("/")
+        login = false
+    }
+})
+
+
 app.get('/cardapio', function (req, res) {
     res.render("cardapio")
 })

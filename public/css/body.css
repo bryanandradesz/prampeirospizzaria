@@ -1,3 +1,65 @@
-* {
-    background-color: yellow;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #a50606;
+    text-align: center;
+}
+
+p {
+    color: #333333;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('img/check.png') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+address {
+    font-style: normal;
+    color: #333333;
+}
+
+a {
+    color: #a50606;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#nossas-pizzas ul {
+    margin-top: 10px;
+}
+
+#contato ul ul {
+    margin-top: 10px;
+}
+
+#contato ul ul li {
+    background: none;
+    padding-left: 0;
+    margin-bottom: 0;
 }

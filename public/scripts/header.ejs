@@ -14,16 +14,15 @@
 
 
 
-           <label for="cart_icon" id="cart_text"><strong>Carrinho</strong></label>
+          <a href="/listar" target="body"> <label for="cart_icon" id="cart_text"><strong>Carrinho</strong></label>
            <p class="cart" id="cart_shop">  <%=numCarrinho%> </p>
-           <img src="img/cart3.svg"  id="cart_icon" class="cart"> 
-           <p class="textos_direita">Faça seu <br><strong>Pedido!</strong></p>
+           <img src="img/cart3.svg"  id="cart_icon" class="cart"> </a>
+           <a href="/cardapio" target="body"><p class="textos_direita">Faça seu <br><strong>Pedido!</strong></p></a>
            <a href="/account" target="_top" >  <p class="textos_direita"> <%=login_section%> <br><strong><%=login_section2%></strong></p></a>
 </header>
 <nav>
     <a href="/listar" target="body">Meus Pedidos</a>
-    <a href="/eletronicos">Meu Endereço</a>
-    <a href="/eletronicos">Nossa Localização</a>
+   
 </nav>
 
 <script>

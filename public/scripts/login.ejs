@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logopp.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/global.css">
-    <title>Login - Prampeiro's Pizzaria</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logopp.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/global.css">
+  <title>Login - Prampeiro's Pizzaria</title>
 </head>
 <body>
-    <h1>Tela Login</h1>
+    <div class="container_login">
+      <img src="img/bannerpizza.png" width="20%" >
     <form action="/login" method="post">
-        <h1>Login</h1>
-        <label for="inUsuario">Usuario:</label> <br>
-        <input type="text" name="inUsuario" value="Prof_Prampeiro" required><br>
-        <label for="inSenha">Senha:</label> <br>
-        <input type="text" name="inSenha" value="prampreiroif123" required> <br>
-        <button type="submit" name="b3">LOGIN</button>
-        <p>Recuperar senha</p> <p>Registrar-se</p>
+        <div class="info_login"> 
+          <h1 class="txtmeio">Login</h1> <br>
+        <label for="inUsuario" class="txtesquerda">Usuario:</label> <br>
+        <input type="text" name="inUsuario" value="Prof_Prampeiro" required class="txtesquerda"><br>
+        <label for="inSenha" class="txtesquerda">Senha:</label> <br>
+        <input type="text" name="inSenha" value="prampreiroif123" required class="txtesquerda"> <br> <br>
+            
+        <button type="submit" name="b3" class="txtmeio" id="botao_login">LOGIN</button>
+
+      </div>
     </form>
+  </div>
 </body>
 </html>
